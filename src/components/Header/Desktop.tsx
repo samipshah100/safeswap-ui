@@ -77,7 +77,9 @@ const Desktop: FC = () => {
             </div>
           </Container>
         </nav>
-        {showBanner && (
+        {/* {showBanner && ( */}
+        {/* turning the following to false hides the banner */}
+        {false && (
           <div className="relative bg-opaque-blue">
             <div className="px-3 py-3 mx-auto max-w-7xl sm:px-6 lg:px-8">
               <div className="pr-16 sm:text-center sm:px-16">
