@@ -1,13 +1,7 @@
-import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { DiscordIcon, InstagramIcon, MediumIcon, TwitterIcon } from 'app/components/Icon'
-import LanguageSwitch from 'app/components/LanguageSwitch'
 import Typography from 'app/components/Typography'
-import { Feature } from 'app/enums'
-import { featureEnabled } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 import Container from '../Container'
@@ -29,11 +23,11 @@ const Footer = () => {
                 Sushi
               </Typography>
             </div>
-            <Typography variant="xs" className="text-low-emphesis">
+            {/* <Typography variant="xs" className="text-low-emphesis">
               {i18n._(t`Our community is building a comprehensive decentralized trading platform for the future of finance. Join
               us!`)}
-            </Typography>
-            <div className="flex items-center gap-4">
+            </Typography> */}
+            {/* <div className="flex items-center gap-4">
               <a href="https://twitter.com/sushiswap" target="_blank" rel="noreferrer">
                 <TwitterIcon width={16} className="text-low-emphesis" />
               </a>
@@ -46,9 +40,9 @@ const Footer = () => {
               <a href="https://discord.gg/NVPXN4e" target="_blank" rel="noreferrer">
                 <DiscordIcon width={16} className="text-low-emphesis" />
               </a>
-            </div>
+            </div> */}
           </div>
-          <div className="flex flex-col gap-1 text-right">
+          {/* <div className="flex flex-col gap-1 text-right">
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Products`)}
             </Typography>
@@ -77,8 +71,8 @@ const Footer = () => {
                 {i18n._(t`Tools`)}
               </Typography>
             </Link>
-          </div>
-          <div className="flex flex-col gap-1 md:text-right lg:text-right">
+          </div> */}
+          {/* <div className="flex flex-col gap-1 md:text-right lg:text-right">
             <Typography variant="xs" weight={700} className="mt-2.5 hover:text-high-emphesis">
               {i18n._(t`Help`)}
             </Typography>
@@ -174,7 +168,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-1">
             <LanguageSwitch />
-          </div>
+          </div> */}
         </div>
       </Container>
     </div>
