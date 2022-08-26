@@ -49,8 +49,14 @@ const nextConfig = {
   //   disable: process.env.NODE_ENV === 'development',
   // },
   images: {
-    loader: 'cloudinary',
-    path: 'https://res.cloudinary.com/sushi-cdn/image/fetch/',
+    // loader: 'cloudinary',
+    // path: 'https://res.cloudinary.com/sushi-cdn/image/fetch/',
+    domains: [
+      'https://res.cloudinary.com/sushi-cdn/image/fetch/',
+      'raw.githubusercontent.com',
+      'https://app.sushi.com',
+      'app.sushi.com',
+    ],
   },
   async redirects() {
     return [

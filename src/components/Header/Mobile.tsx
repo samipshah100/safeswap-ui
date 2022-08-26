@@ -11,6 +11,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { FC, Fragment, useState } from 'react'
 
+import safeswapLogo from '../../../public/safeswapLogo.png'
 import { NavigationItem } from './NavigationItem'
 
 const Mobile: FC = () => {
@@ -27,9 +28,14 @@ const Mobile: FC = () => {
           <div className="p-2 rounded-full hover:bg-white/10">
             <MenuIcon width={28} className="text-white cursor-pointer hover:text-white" onClick={() => setOpen(true)} />
           </div>
-          <div className="flex items-center w-6">
+          <div className="flex items-center w-20">
             <Link href="/swap" passHref={true}>
-              <Image src="https://app.sushi.com/images/logo.svg" alt="Sushi logo" width="24px" height="24px" />
+              {/* <Image src="https://app.sushi.com/images/logo.svg" alt="Sushi logo" width="24px" height="24px" /> */}
+              <Image
+                src={safeswapLogo}
+                alt="Safeswap logo"
+                // width={24} height={24}
+              />
             </Link>
           </div>
           <div className="flex items-center">{<Web3Network />}</div>
